@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <h1>Student Registration Form</h1>
+            <div class="container">
+                <div class="form">
+                    <h2>Registration Form</h2>
+                    <form>
+                        <div class="name">
+                            <label for="name">Name :</label>
+                            <input type="text" id="name" placeholder="Enter Name.." required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email Id :</label>
+                            <input type="email" id="email" placeholder="abc123@gmail.com" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone No :</label>
+                            <input type="text" id="phone" placeholder="Phone No" required>
+                        </div>
+                        <div class="city">
+                            <label for="city">City :</label>
+                            <input type="text" id="city" placeholder="Enter City.." required>
+                        </div>
+                        <div class="gender">
+                            <label for="gender">Gender : </label>
+                            <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                            <input type="radio" name="male-female" id="female" value="Female">Female
+                        </div>
+                        <div class="skills">
+                            <label for="skills">Skills :</label>
+                            <input type="checkbox" value="Java" id="Java" class="checkbox" checked>Java
+                            <input type="checkbox" value="C" id="c" class="checkbox">
+                            <input type="checkbox" value="HTML" id="html" class="checkbox">HTML
+                        </div>
+                        <div class="button">
+                            <button type="button" id="enroll">Enroll</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="output">
+                    <h2>Registered Student Details</h2>
+                    <div class="cardContainer" id="cardContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </main>
+</body>
+
+</html>
